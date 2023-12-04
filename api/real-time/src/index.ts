@@ -148,7 +148,7 @@ const app = new Elysia()
       ws.publish("prediction", body);
     },
   })
-  .listen(`0.0.0.0:${process.env.PORT}`);
+  .listen(process.env.PORT);
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
